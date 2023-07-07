@@ -27,7 +27,7 @@ namespace WebAPI.Controllers
         }
          
         [HttpPost]
-        [Route("AddCustomer")]
+        [Route("AddCustomers")]
         public async Task<IActionResult> Post(List<Customer> customers)
         { 
             var result = await _Customer.InsertCustomers(customers);
